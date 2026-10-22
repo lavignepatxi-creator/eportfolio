@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patxi Lavigne | 3EA Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --electric-blue: #00d2ff;
+            --eco-green: #39ff14;
+            --deep-dark: #0a0a0c;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--deep-dark); color: #e2e8f0; scroll-behavior: smooth; }
+        .tech-font { font-family: 'JetBrains Mono', monospace; }
+        .electric-border { border: 1px solid rgba(0, 210, 255, 0.2); transition: all 0.3s ease; }
+        .electric-border:hover { border-color: var(--electric-blue); box-shadow: 0 0 20px rgba(0, 210, 255, 0.1); }
+        .nav-link { transition: color 0.3s; font-size: 0.7rem; letter-spacing: 0.2em; font-weight: 700; text-transform: uppercase; }
+        .nav-link:hover { color: var(--electric-blue); }
+        .gradient-text { background: linear-gradient(90deg, #00d2ff, #39ff14); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        section { padding-top: 100px; padding-bottom: 50px; }
+        .card-bg { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); }
+        
+        .academic-line { position: relative; padding-left: 2.5rem; border-left: 1px solid rgba(0, 210, 255, 0.2); padding-bottom: 2.5rem; }
+        .academic-line:last-child { border-left-color: transparent; padding-bottom: 0; }
+        .academic-dot { position: absolute; left: -5px; top: 0; width: 11px; height: 11px; background: var(--electric-blue); border-radius: 50%; box-shadow: 0 0 12px var(--electric-blue); }
+        .loc-tag { font-family: 'JetBrains Mono', monospace; color: #d1d5db; font-size: 0.75rem; letter-spacing: 0.05em; }
+        .year-tag { font-family: 'JetBrains Mono', monospace; color: var(--electric-blue); font-size: 0.75rem; font-weight: bold; }
+    </style>
+</head>
+<body class="leading-relaxed text-gray-200">
+
+    <!-- NAVIGATION (6 Mandatory N7 Tabs) -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0a0a0c]/95 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="tech-font font-bold text-lg tracking-tighter text-blue-400 underline decoration-green-400">PL_3EA.SYS</span>
+            <div class="hidden md:flex space-x-6">
+                <a href="#welcome" class="nav-link">Welcome</a>
+                <a href="#engineering" class="nav-link">Engineering</a>
+                <a href="#mobility" class="nav-link">Mobility</a>
+                <a href="#engagement" class="nav-link">Engagement</a>
+                <a href="#activities" class="nav-link">Activities</a>
+                <a href="#career" class="nav-link text-blue-400">Career</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6">
+
+        <!-- 1. WELCOME SECTION -->
+        <section id="welcome" class="min-h-[60vh] flex flex-col justify-center">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">Powering <br><span class="gradient-text italic">Innovation.</span></h1>
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl leading-relaxed">
+                3EA Engineering Student at <span class="text-white font-semibold text-blue-400">ENSEEIHT Toulouse (31)</span>. 
+                Bridging micro-scale physical phenomena with macro-scale electrical automation systems.
+            </p>
+            <div>
+                <a href="#career" class="inline-flex items-center bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full transition font-bold uppercase text-xs tracking-widest shadow-lg shadow-blue-900/20">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168l4.74 3.555a.5.5 0 010 .814l-4.74 3.555A.5.5 0 018.8 14.682V7.486a.5.5 0 010-.814.5.5 0 01.755-.318z"/></svg>
+                    Watch Elevator Pitch
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. ENGINEERING SECTION -->
+        <section id="engineering">
+            <h2 class="text-xs font-bold tech-font text-blue-500 uppercase tracking-[0.3em] mb-12 text-center">// 01. Engineering_&_Competencies</h2>
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <!-- Skills -->
+                <div class="md:col-span-2 space-y-8">
+                    <div class="p-8 rounded-2xl card-bg electric-border">
+                        <h3 class="text-lg font-bold mb-6 tech-font tracking-tight text-blue-400">Technical_Proficiency</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-[10px] font-bold text-gray-500 uppercase mb-3 tracking-widest text-justify">Instrumentation & Metrology</h4>
+                                <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                    Physical/Electrical measurement chains, sensor implementation, uncertainty analysis (GUM), and calibration protocols.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-bold text-green-400 uppercase mb-3 tracking-widest">Digital & Data Tools</h4>
+                                <ul class="text-xs tech-font text-gray-400 space-y-1">
+                                    <li>> Python / MATLAB / LabVIEW / Excel</li>
+                                    <li>> Arduino / Fusion 360 / Creo Parametric</li>
+                                    <li>> Optimu / SAP / Power Automate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div class="p-8 rounded-2xl bg-blue-900/10 border border-blue-500/20">
+                        <h3 class="text-lg font-bold mb-4 tech-font tracking-tight">Human_Dynamics</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-[10px] font-bold tech-font uppercase">Teamwork</span>
+                            <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-[10px] font-bold tech-font uppercase">Project Management</span>
+                            <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-[10px] font-bold tech-font uppercase">Creativity</span>
+                            <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-[10px] font-bold tech-font uppercase">Problem Solving</span>
+                            <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-[10px] font-bold tech-font uppercase">Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Background -->
+                <div class="p-8 rounded-2xl card-bg border border-gray-800">
+                    <h3 class="text-lg font-bold mb-10 tech-font tracking-tight text-justify">> Academic_Path</h3>
+                    <div class="flex flex-col">
+                        <div class="academic-line">
+                            <div class="academic-dot"></div>
+                            <div class="year-tag mb-1">2024 - Present</div>
+                            <h4 class="text-sm font-bold uppercase text-white tracking-tight">ENSEEIHT (INP Toulouse)</h4>
+                            <p class="loc-tag">Toulouse (31)</p>
+                            <p class="text-sm text-blue-300 tech-font mt-1 font-semibold">3EA Engineering Cycle</p>
+                        </div>
+                        <div class="academic-line">
+                            <div class="academic-dot"></div>
+                            <div class="year-tag mb-1">2024 - 2026</div>
+                            <h4 class="text-sm font-bold uppercase text-gray-200 tracking-tight">BUT Mesures Physiques</h4>
+                            <p class="loc-tag">IUT Toulouse (31)</p>
+                            <p class="text-sm text-gray-400 tech-font mt-1">Instrumentation & Metrology</p>
+                        </div>
+                        <div class="academic-line">
+                            <div class="academic-dot"></div>
+                            <div class="year-tag mb-1">2023 - 2024</div>
+                            <h4 class="text-sm font-bold uppercase text-gray-300 tracking-tight">INSA Toulouse</h4>
+                            <p class="loc-tag">Toulouse (31)</p>
+                            <p class="text-sm text-gray-500 tech-font mt-1 italic">Integrated Preparatory Cycle</p>
+                        </div>
+                        <div class="academic-line">
+                            <div class="academic-dot"></div>
+                            <div class="year-tag mb-1">Graduated 2023</div>
+                            <h4 class="text-sm font-bold uppercase text-gray-200 tracking-tight">Lycée Privé Saint-Joseph</h4>
+                            <p class="loc-tag mb-2">Oloron Sainte-Marie (64)</p>
+                            <p class="text-sm text-gray-200 leading-relaxed font-semibold">
+                                <span class="text-white">French Scientific Baccalaureate</span> • European Section (Spanish) • <span class="text-eco-green">Highest Honors (Summa Cum Laude)</span>
+                            </p>
+                            <p class="text-sm text-gray-300 tech-font mt-2 leading-relaxed">
+                                Specializations: Mathematics, Life & Earth Sciences, Physics-Chemistry, with Expert Mathematics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiences & Projects Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl card-bg border-l-4 border-l-blue-500 relative group transition-all hover:bg-gray-900/50">
+                    <div class="flex justify-between items-start mb-2 text-justify">
+                        <h3 class="text-xl font-bold">Metrology & Digital Tracking Intern</h3>
+                        <span class="text-[10px] tech-font bg-blue-500/10 text-blue-400 px-2 py-1 rounded">11 WKS</span>
+                    </div>
+                    <p class="loc-tag mb-4 text-gray-300 font-bold">Nexteam Machining, Escout (64)</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed text-justify">
+                        Full responsibility for the <span class="text-white font-semibold text-justify">quality and inventory management</span> of a park containing <span class="text-white text-justify">3,000+ pieces of monitoring and measurement equipment (ESM)</span>.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 mt-1">▹</span>
+                            <p>Rigorous <span class="text-gray-200 font-medium">calibration tracking</span> and logistical preparation for specialized laboratory shipments.</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 mt-1">▹</span>
+                            <p>Advanced data management through <span class="text-gray-200 font-medium">Optimu, SAP, Unibase, and Power Automate</span>.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-8 rounded-3xl card-bg border-l-4 border-l-green-500 transition-all hover:bg-gray-900/50">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white tracking-tight">Silicon PV Cells Fabrication</h3>
+                        <span class="text-[10px] tech-font bg-green-500/10 text-green-400 px-2 py-1 rounded uppercase">Project</span>
+                    </div>
+                    <p class="loc-tag mb-4 text-gray-300 font-bold">AIME Plateforme, Toulouse (31)</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed text-justify">
+                        One-week immersion in an <span class="text-white font-semibold text-justify">ISO 6 / ISO 7 Cleanroom</span> environment for the manufacturing and characterization of photovoltaic cells.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-3 bg-black/30 rounded-lg">
+                            <h5 class="text-[10px] font-bold text-green-400 uppercase mb-2 tracking-widest text-justify">Processes</h5>
+                            <ul class="text-[10px] text-gray-400 space-y-1">
+                                <li>• UV Photolithography</li>
+                                <li>• Doping & Oxidation</li>
+                                <li>• Yield Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="p-3 bg-black/30 rounded-lg">
+                            <h5 class="text-[10px] font-bold text-green-400 uppercase mb-2 tracking-widest text-justify">Control</h5>
+                            <ul class="text-[10px] text-gray-400 space-y-1">
+                                <li>• Cleanroom Rigor</li>
+                                <li>• Chemical Safety</li>
+                                <li>• Metrology Tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MOBILITY SECTION -->
+        <section id="mobility">
+            <h2 class="text-xs font-bold tech-font text-blue-500 uppercase tracking-[0.3em] mb-12 text-center">// 02. International_Vision</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl card-bg border border-gray-800">
+                    <h3 class="text-lg font-bold">Denmark</h3>
+                    <p class="text-xs text-blue-400 mb-3 italic">Insp: Henrik Stiesdal</p>
+                    <p class="text-xs text-gray-500 leading-relaxed text-justify">Exploring wind energy automation and the optimization of large-scale offshore systems in Scandinavia.</p>
+                </div>
+                <div class="p-6 rounded-xl card-bg border border-gray-800">
+                    <h3 class="text-lg font-bold">USA / Canada</h3>
+                    <p class="text-xs text-blue-400 mb-3 italic">Insp: Rudolf Kálmán</p>
+                    <p class="text-xs text-gray-500 leading-relaxed text-justify">Deepening expertise in state-space modeling and advanced control loops for the next generation of Electric Vehicles.</p>
+                </div>
+                <div class="p-6 rounded-xl card-bg border border-gray-800">
+                    <h3 class="text-lg font-bold">Germany</h3>
+                    <p class="text-xs text-blue-400 mb-3 italic">Insp: Werner von Siemens</p>
+                    <p class="text-xs text-gray-500 leading-relaxed text-justify">Studying Smart Grid infrastructure and industrial power electronics within Europe's leading industrial ecosystem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SUSTAINABILITY & CIVIC ENGAGEMENT (NEW) -->
+        <section id="engagement">
+            <h2 class="text-xs font-bold tech-font text-blue-500 uppercase tracking-[0.3em] mb-4 text-center">// 03. Sustainability_&_Civic_Engagement</h2>
+            <p class="text-center text-gray-400 text-sm mb-12">Community involvement, public safety qualifications, and a commitment to sustainable engineering.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Volunteering -->
+                <div class="p-8 rounded-2xl card-bg border-t border-blue-500/30">
+                    <h3 class="text-sm font-bold tech-font text-blue-400 uppercase mb-6 tracking-widest text-justify">Community & Social Volunteering</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-1 text-justify">
+                                <h4 class="text-white font-bold text-sm">Food Bank Volunteer</h4>
+                                <span class="year-tag text-[10px]">2020-2023</span>
+                            </div>
+                            <p class="loc-tag mb-2">Oloron Sainte-Marie (64)</p>
+                            <p class="text-xs text-gray-400 leading-relaxed text-justify">Participation in food collections and solidarity drives, fostering teamwork and social support.</p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-800">
+                            <div class="flex justify-between items-center mb-1 text-justify">
+                                <h4 class="text-white font-bold text-sm">Civic Support</h4>
+                                <span class="year-tag text-[10px]">2023</span>
+                            </div>
+                            <p class="loc-tag mb-2">Hospitalité Basco-Béarnaise, Lourdes (65)</p>
+                            <p class="text-xs text-gray-400 leading-relaxed text-justify">Assisting and supporting vulnerable individuals and people with disabilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety & Vision -->
+                <div class="space-y-8">
+                    <div class="p-8 rounded-2xl card-bg border-t border-red-500/30">
+                        <h3 class="text-sm font-bold tech-font text-red-400 uppercase mb-4 tracking-widest text-justify">Public Safety & First Aid</h3>
+                        <div class="flex justify-between items-center mb-1 text-justify">
+                            <h4 class="text-white font-bold text-sm">Lifeguard & First Responder</h4>
+                            <span class="year-tag text-[10px]">2024-2025</span>
+                        </div>
+                        <p class="loc-tag mb-3">Municipal Swimming Pool, Oloron (64)</p>
+                        <p class="text-xs text-gray-400 leading-relaxed text-justify">
+                            Holder of <span class="text-white">BNSSA</span> (Aquatic Rescue) and <span class="text-white">PSE1</span> (First Responder). Responsible for user safety and emergency response management.
+                        </p>
+                    </div>
+                    
+                    <div class="p-8 rounded-2xl bg-green-500/5 border border-green-500/20">
+                        <h3 class="text-sm font-bold tech-font text-green-400 uppercase mb-4 tracking-widest text-justify">Sustainable Vision</h3>
+                        <h4 class="text-white font-bold text-sm mb-2 text-justify text-justify">Energy Transition & Low-Carbon Systems</h4>
+                        <p class="text-xs text-gray-300 leading-relaxed italic text-justify text-justify">
+                            Applying 3EA engineering skills (electrical engineering, automation, energy efficiency) to design sustainable, low-carbon industrial processes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SPORTS & ACTIVITIES (NEW) -->
+        <section id="activities">
+            <h2 class="text-xs font-bold tech-font text-blue-500 uppercase tracking-[0.3em] mb-12 text-center">// 04. Sports_&_Activities</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Athletic Endurance -->
+                <div class="p-8 rounded-2xl card-bg flex items-start gap-6 border-l-4 border-l-blue-500">
+                    <div class="text-4xl mt-1 text-justify">🏃‍♂️</div>
+                    <div>
+                        <h3 class="text-sm font-bold tech-font text-blue-400 uppercase mb-4 tracking-widest text-justify">Athletic Endurance</h3>
+                        <div class="space-y-4">
+                            <p class="text-sm text-gray-300 leading-relaxed text-justify">
+                                <span class="text-white font-bold">Triathlons & Swimming:</span> Regular training and relay triathlons (Artouste), building resilience and stress management under academic workloads.
+                            </p>
+                            <p class="text-sm text-gray-300 leading-relaxed text-justify">
+                                <span class="text-white font-bold">Team Sports:</span> 7 years of club football experience, strengthening collective cohesion and communication.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="p-8 rounded-2xl card-bg flex items-start gap-6 border-l-4 border-l-eco-green">
+                    <div class="text-4xl mt-1 text-justify">📚</div>
+                    <div>
+                        <h3 class="text-sm font-bold tech-font text-eco-green uppercase mb-4 tracking-widest text-justify">Personal Interests</h3>
+                        <div class="space-y-4 text-justify">
+                            <p class="text-sm text-gray-300 leading-relaxed text-justify">
+                                <span class="text-white font-bold">Strategy & Gaming:</span> Strategy video games & competitions, exploring performance tuning and hardware optimization.
+                            </p>
+                            <p class="text-sm text-gray-300 leading-relaxed text-justify">
+                                <span class="text-white font-bold">Literature:</span> Passionate reader of 19th-century classic literature, sharpening analytical thinking and curiosity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CAREER DEVELOPMENT -->
+        <section id="career" class="pb-32">
+            <h2 class="text-xs font-bold tech-font text-blue-500 uppercase tracking-[0.3em] mb-12 text-center">// 05. Career_Interface</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <h4 class="text-[10px] font-bold text-gray-500 uppercase tracking-widest text-center text-justify">Documentation</h4>
+                    <a href="CV_Patxi_Lavigne_EN.pdf" class="flex justify-between items-center p-5 rounded-xl border border-gray-800 hover:border-blue-500 transition-all group bg-gray-900/50">
+                        <span class="text-sm italic">Resume (English)</span>
+                        <span class="text-[10px] tech-font text-blue-400 font-bold uppercase">PDF</span>
+                    </a>
+                    <a href="CV_Patxi_Lavigne_FR.pdf" class="flex justify-between items-center p-5 rounded-xl border border-gray-800 hover:border-blue-500 transition-all group bg-gray-900/50">
+                        <span class="text-sm italic">CV (Français)</span>
+                        <span class="text-[10px] tech-font text-blue-400 font-bold uppercase">PDF</span>
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-[10px] font-bold text-gray-500 uppercase tracking-widest text-center text-justify">Digital Network</h4>
+                    <a href="https://www.linkedin.com/in/patxi-lavigne-4205082ab" target="_blank" class="flex justify-between items-center p-5 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:border-blue-400 transition-all group h-[115px]">
+                        <span class="text-sm font-bold">LinkedIn Profile</span>
+                        <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="video-pitch" class="mt-16 max-w-2xl mx-auto p-1 bg-gradient-to-r from-blue-500 to-green-400 rounded-2xl shadow-xl">
+                <div class="bg-[#0a0a0c] rounded-2xl p-8 text-center">
+                    <h3 class="text-xl font-bold mb-4 tech-font uppercase tracking-widest text-justify">Elevator Pitch</h3>
+                    <div class="aspect-video bg-gray-900 rounded-lg flex items-center justify-center border border-gray-800 text-gray-700 text-[10px] tech-font text-justify text-justify">
+                        [ VIDEO EMBED: ENSEEIHT_PITCH_PL.MP4 ]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-12 border-t border-gray-900 text-gray-700 text-[10px] tech-font uppercase tracking-[0.3em]">
+        Engineered by Patxi Lavigne // ENSEEIHT 3EA // 2024
+    </footer>
+
+</body>
+</html>
